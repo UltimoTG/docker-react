@@ -3,9 +3,9 @@ services:
   - docker
 
 before_install:
-  - docker build -t UltimoTG/docker-react -f Dockerfile.dev .
+  - docker build -t tashigurung/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run UltimoTG/docker-react npm run test -- --coverage
+  - docker run tashigurung/docker-react npm run test -- --coverage
 
 
